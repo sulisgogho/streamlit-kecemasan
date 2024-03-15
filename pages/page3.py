@@ -10,5 +10,5 @@ st.sidebar.write("© 2024 Sulis Gogho")
 
 st.write("Kunjungi kami di:")
 st.write("[Email : sulisgogho@gmail.com](mailto:sulisgogho@.com)")
-st.write("[Instagram : @sulisgogho@gmail.com](https://www.instagram.com/sulisgogho123/)")
-st.write("[Facebook : Sulis Gogho](https://www.facebook.com/sulis.gogho)")
+st.write("[Instagram : @sulisgogho123](https://www.instagram.com/sulisgogho123/)")
+st.write("[Facebook : sulis.gogho](https://www.facebook.com/sulis.gogho)")
