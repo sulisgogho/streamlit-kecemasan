@@ -19,7 +19,7 @@ def load_data(uploaded_file):
 
 # Fungsi untuk melatih model KNN dan menghitung akurasi
 def train_and_evaluate(X_train, X_test, y_train, y_test):
-    model = KNeighborsClassifier(n_neighbors=4)
+    model = KNeighborsClassifier(n_neighbors=5)
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
     accuracy = accuracy_score(y_test, predictions)
@@ -58,18 +58,18 @@ if uploaded_file is not None:
     
     if st.button('Lakukan Klasifikasi'):
         predictions = predict(model, X_new_imputed)
-        df_new['Prediksi Status'] = predictions
+        df_new['Klasifikasi Status'] = predictions
         st.write("Hasil Klasifikasi:")
         st.write(df_new)
 
         # Tampilkan hasil prediksi ke dalam diagram batang
-        st.header("Visualisasi Hasil Prediksi")
+        st.header("Visualisasi Hasil Klasifikasi")
         
-        # Diagram Batang
+        # Diagram Batangs
         st.subheader("Diagram Batang")
-        pred_counts = df_new['Prediksi Status'].value_counts()
+        pred_counts = df_new['Klasifikasi Status'].value_counts()
         plt.bar(pred_counts.index, pred_counts.values)
-        plt.xlabel('Prediksi Status')
+        plt.xlabel('Klasifikasi Status')
         plt.ylabel('Jumlah')
         st.pyplot()
 

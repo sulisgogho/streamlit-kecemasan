@@ -22,7 +22,9 @@ def make_sidebar():
 
         if st.session_state.get("logged_in", False):
             st.page_link("pages/page1.py", label="Dashboard", icon="👩‍💻")
-            st.page_link("pages/page2.py", label="Analisis KNN", icon="🔒")
+            st.page_link("pages/page5.py", label="Euclidean Distance", icon="🏌️")
+            st.page_link("pages/page2.py", label="Analisis KNN 80:20", icon="🔒")
+            st.page_link("pages/page4.py", label="Analisis KNN 70:30", icon="🔒")
             st.page_link("pages/page3.py", label="Pelatih", icon="🏌️")
 
             st.write("")
