@@ -4,3 +4,4 @@ numpy==1.26.4
 scikit-learn
 pip==23.2.1
 matplotlib
+seaborn
