@@ -6,7 +6,8 @@ make_sidebar()
 
 st.title("KLASIFIKASI KECEMASAN ATLET")
 
-st.write("Please log in to continue")
+st.write("Please log in to continue (Username = test & Password = test)")
+
 
 username = st.text_input("Username")
 password = st.text_input("Password", type="password")
